@@ -1,4 +1,4 @@
-# Memorycard Memoir
+# Memory Card Memoir
 (Full-Stack, MongoDB, Express.js, React.js, Node.js) | An app that provides prompts about and stores your video game experiences.
 ## Deployment Link:
 <!-- URL_GOES_HERE -->
