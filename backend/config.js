@@ -5,6 +5,3 @@
 export const PORT = 5555;
 
 // export const mongoDBURL = `mongodb+srv://aikasem:${goku}@pre-deployment-mcm.iwm5pzq.mongodb.net/?retryWrites=true&w=majority&appName=Pre-Deployment-MCM`
-
-
-export const mongoDBURL = 'mongodb+srv://aikasem:R2kLm93lCJ5YDDvt@pre-deployment-mcm.iwm5pzq.mongodb.net/?retryWrites=true&w=majority&appName=Pre-Deployment-MCM'
