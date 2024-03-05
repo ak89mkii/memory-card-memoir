@@ -1,6 +1,11 @@
 import express from "express";
-import { PORT, mongoDBURL } from "./config.js";
+// import { PORT, mongoDBURL } from "./.env";
 import mongoose from 'mongoose';
+
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+
+require('dotenv').config()
 
 const app =  express();
 
@@ -10,11 +15,11 @@ app.get('/', (request, response) => {
 })
 
 mongoose
-    .connect(mongoDBURL)
+    .connect(process.env.mongoDBURL)
     .then(() => {
 
-        app.listen(PORT, () => {
-            console.log(`app is listening to port: ${PORT}`);
+        app.listen(process.env.PORT, () => {
+            console.log(`app is listening to port: ${process.env.PORT}`);
             // console.log(`app is listening to port: ${GOKU}`);
         });
     })
